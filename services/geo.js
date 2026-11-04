@@ -1,5 +1,5 @@
 // Small spherical-earth helpers. Accurate to well under 1% at the distances
-// BioBot cares about (a few tens of kilometres).
+// Wildfire Alarm cares about (a few tens of kilometres).
 
 const EARTH_RADIUS_KM = 6371;
 const toRad = d => d * Math.PI / 180;

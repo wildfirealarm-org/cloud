@@ -12,7 +12,7 @@ const router = express.Router();
  * tags:
  *   name: Sensor Data
  *   description: >
- *     Submit, query, and delete sensor readings from BioBot field devices.
+ *     Submit, query, and delete sensor readings from Wildfire Alarm field devices.
  *     Each submission is a batch of one or more device payloads. Every reading
  *     is automatically evaluated against the configured alert thresholds —
  *     matching readings create Alert records without any extra API call.
