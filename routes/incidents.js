@@ -103,7 +103,7 @@ router.get('/incidents/:id', authenticate, param('id').isInt({ min: 1 }), async 
  *     summary: Record what the host found on the drive-out
  *     description: >
  *       Marks the incident acknowledged by the calling user and stores the
- *       outcome. This is the confirmation step in the BioBot model: detect,
+ *       outcome. This is the confirmation step in the Wildfire Alarm model: detect,
  *       drive out, act.
  *     tags: [Incidents]
  *     security: [{ ApiKeyAuth: [] }]

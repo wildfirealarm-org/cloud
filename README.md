@@ -1,4 +1,4 @@
-# Wildfire Alarm — cloud API (biobot-cloud)
+# Wildfire Alarm — cloud API
 
 REST API for the Wildfire Alarm sensor network. Node.js, Express, and
 Sequelize on MySQL or MariaDB. Receives readings from sensor nodes, stores
@@ -120,7 +120,7 @@ test convenience only; deploy on MySQL or MariaDB.
 
 ## Run with Docker
 
-See `biobotproject-org/biobot-infrastructure` for the Compose stack.
+See [`wildfirealarm-org/infrastructure`](https://github.com/wildfirealarm-org/infrastructure) for the Compose stack.
 
 ## Security notes
 
