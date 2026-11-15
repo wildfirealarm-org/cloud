@@ -16,6 +16,7 @@ const ingestRoutes = require('./routes/ingest');
 const incidentsRoutes = require('./routes/incidents');
 const situationRoutes = require('./routes/situation');
 const usersRoutes = require('./routes/users');
+const siteRoutes = require('./routes/site');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger');
 
@@ -64,6 +65,7 @@ function createApp({ requestLog = true } = {}) {
     next();
   });
 
+  app.use('/', siteRoutes);
   app.use('/', authRoutes);
   app.use('/', submitRoutes);
   app.use('/', devicesRoutes);

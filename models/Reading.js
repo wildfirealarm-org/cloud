@@ -37,6 +37,11 @@ const Reading = sequelize.define('Reading', {
     type: DataTypes.INTEGER,
     allowNull: true
   }
+}, {
+  indexes: [
+    // Latest reading and recent history per node (GET /public/sensors)
+    { name: 'readings_device_timestamp', fields: ['deviceId', 'timestamp'] },
+  ],
 });
 
 module.exports = Reading;
